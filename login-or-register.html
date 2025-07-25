@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login-or-register.css">
+</head>
+
+<body>
+    <main>
+        <div id="Wellcome">
+            <img src="Images/Logo-for-website.png">
+            <p>Welcome <br>to <br> Urdu Adab</p>
+        </div>
+        <div id="loginbox">
+            <div id="login">
+                <h2 id="text">Welcome Back</h2>
+                <input type="text" placeholder="Enter you Email">
+                <input type="password" placeholder="Password">
+                <p style="margin-top: 5%;">Don't have account <a id="registerbt" href="#">Register</a></p>
+                <button class="bt">Login</button>
+            </div>
+
+        </div>
+        <div id="registerbox" style="display: none;">
+            <div id="register">
+                <h2 id="text">Create Account</h2>
+                <input type="text" placeholder="Enter you Email">
+                <input type="password" placeholder="Enter Password">
+                <input type="password" placeholder="Confirm Password">
+                <p style="margin-top: 5%;">Already have account <a id="loginbt" href="#">Login</a>
+                </p>
+                <button class="bt">Create Account</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        let login = document.getElementById('loginbox');
+        let register = document.getElementById('registerbox');
+        let loginbt = document.getElementById('loginbt');
+        let registerbt = document.getElementById('registerbt');
+        loginbt.addEventListener('click', (e) => {
+            e.preventDefault();
+            login.style.display = 'block';
+            register.style.display = 'none';
+        });
+        registerbt.addEventListener('click', (e) => {
+            e.preventDefault();
+            register.style.display = 'block';
+            login.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>

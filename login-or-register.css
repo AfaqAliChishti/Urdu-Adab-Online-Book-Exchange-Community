@@ -1,0 +1,117 @@
+*{
+    border: 0;
+    margin: 0;
+    font: 16px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #002d1f, #004225);
+    background: linear-gradient(to right, #003c2e, #001f33);
+    height: 600px;
+    width: calc(100vw-scrolbar);
+}
+main{
+    height: 70%;
+    width: 50%;
+    background-color: #FDF6E3;
+    border: whitesmoke solid 2px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+@media (max-width: 700px){
+    main{
+        width: 80%;
+        height: 90%;
+        background: linear-gradient(to right, #fdf6e3, #fddde6);
+        background: linear-gradient(to right, #fdf6e3, #ffe5b4);
+    }
+}
+#Wellcome{
+    height: 100%;
+    width: 50%;
+    background-color: #004225;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: whitesmoke;
+    gap: 5%;
+    
+}
+img{
+    height: 30%;
+}
+#loginbox, #registerbox{
+    height: 100%;
+    width: 50%;
+}
+@media (max-width: 700px){
+    #Wellcome{
+        display: none;
+    }
+}
+@media (max-width: 700px){
+    #loginbox, #registerbox{
+        width: 100%;
+    }
+}
+#login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+#register{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    
+}
+p a{
+    color: #003c2e;
+}
+#text{
+    margin-bottom: 2%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+input{
+    width: 70%;
+    padding: 5%;
+    border-radius: 12px;
+}
+button{
+    width: 50%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-top: 5%;
+    border-radius: 14px;
+    font-size: 1.2rem;
+    background-color: #004225;
+    color: white;
+    
+
+}
